@@ -1,0 +1,91 @@
+
+<div class="containet">
+   <button class="b1 m-5" [routerLink]="['../menu']">back</button>
+   <div class="container mb-2">
+<form class="content shadow mt-3 "  [formGroup]="registerForm" (ngSubmit)="submitData()">
+<h3 class="text-center" >Sign-Up</h3>
+<div class="row">
+<div class="col-lg-6 col-6 mt-2 mb-2">
+    <input type="text" formControlName="firstName" class="form-control" placeholder="First Name">
+     <!-- display error start -->
+       <div *ngIf ="firstname.invalid && (firstname.touched || firstname.dirty)">
+          <span *ngIf="firstname.errors?.required">*First Name Is Required</span>
+          <span *ngIf="firstname.errors?.pattern">*Enter Only Character</span>
+       </div>
+       <!-- display error end -->
+     </div>
+
+  <div class="col-lg-6 col-6 mt-2 mb-2">
+       <input type="text" formControlName="lastName" class="form-control" placeholder="Last Name">
+   <!-- display error start -->
+       <div *ngIf ="lastname.invalid && (lastname.touched || lastname.dirty)">
+          <span *ngIf="lastname.errors?.required">Last Name Is Required</span>
+          <span *ngIf="lastname.errors?.required">Enter Only Character</span>
+       </div>
+       <!-- display error end -->
+     </div>
+
+
+</div>
+<div class="col-lg-12 col-12 mt-2 mb-2">
+     <input type="text" formControlName="emailId"class="form-control" placeholder="Email ID">
+     <!-- display error start -->
+       <div *ngIf ="emailid.invalid && (emailid.touched || emailid.dirty )">
+          <span *ngIf="emailid.errors?.required">Email Is Required</span>
+          <span *ngIf="emailid.errors?.email">Enter Only Email</span>
+       </div>
+       <!-- display error end -->
+</div> 
+
+<div class="col-lg-12 col-12 mt-2 mb-2   ">
+     <input type="text"  formControlName="phoneNumber" class="form-control" placeholder="Phone Number">
+    <!-- display error start -->
+       <div *ngIf ="phoneNumber.invalid && (phoneNumber.touched || phoneNumber.dirty )">
+          <span *ngIf="phoneNumber.errors?.required">Number Is Required</span>
+          <span *ngIf="phoneNumber.errors?.pattern">Enter Only Numbers</span>
+       </div>
+       <!-- display error end -->
+</div> 
+
+<div class="col-lg-12 col-12 mt-2 mb-2   ">
+     <input type="password"  formControlName="passWord" class="form-control" placeholder="Password">
+    <!-- display error start -->
+       <div *ngIf ="passWord.invalid && (passWord.touched || passWord.dirty )">
+          <span *ngIf="passWord.errors?.required">Password Is Required</span>
+          <span *ngIf="passWord.errors?.pattern">Enter Only Numbers</span>
+       </div>
+       <!-- display error end -->
+</div> 
+
+
+<div class="col-lg-12 col-12 mt-2 mb-2">
+     <input type="text" formControlName="address" class="form-control" placeholder="Address">
+    <!-- display error start -->
+       <div *ngIf ="address.invalid && (address.touched || address.dirty )">
+          <span *ngIf="address.errors?.required">Address Is Required</span>
+          <span *ngIf="address.errors?.required">Address is required</span>
+       </div>
+       <!-- display error end -->
+</div> 
+
+<div class="col-lg-12 col-12 mt-3">
+     <button class="btn" [disabled]="registerForm.invalid" >Sign-Up</button>
+</div> 
+
+</form>
+<div class="bubbles">
+      <img class="logo" src="/assets/images/logo.png" alt="" />
+      <img src="/assets/images/bubble.png" alt="">
+      <img class="logo" src="/assets/images/logo.png" alt="" />
+      <img src="/assets/images/bubble.png" alt="">
+      <img style= "border-radius: 50%;" src="/assets/images/food6.jpg" alt="">
+      <img class="logo" src="/assets/images/logo.png" alt="" />
+      <img src="/assets/images/bubble.png" alt="">
+      <img src="/assets/images/bubble.png" alt="">
+      <img style= "border-radius: 50%;" src="/assets/images/food6.jpg" alt="">
+</div>
+</div>
+</div>
+
+   
+

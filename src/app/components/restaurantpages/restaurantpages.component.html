@@ -1,0 +1,26 @@
+<div class="container">
+  <button routerLink="../../restaurant" class="button1 mt-5 mb-5"><i class="fa fa-hand-o-left"
+      aria-hidden="true"></i>&nbsp; Back</button>
+  <div class="row">
+
+    <div class="col-lg-6" *ngIf="menuData">
+      <img src="{{menuData[0].restaImg}}" alt="">
+      <h1 class="mt-3">{{menuData[0].restaName}}</h1>
+      <p>{{menuData[0].restaDetails}}</p>
+      <p>{{menuData[0].restaPrice | currency :'NGN '}}</p>
+
+    </div>
+    <div class="col-lg-6 mt-1">
+      Name:<br>
+      <input type="text" placeholder="Enter Your Name"><br><br>
+      Email: <br>
+      <input type="text" placeholder="Enter your Email "><br><br>
+      Address: <br>
+      <input type="text" placeholder="Enter your Address "><br><br>
+      Number Of People:<br>
+      <input type="number" min="1" placeholder="number of People Expected "><br><br>
+      <button class="button2" [routerLink]="['/restaurant']">Submit</button>
+    </div>
+
+  </div>
+</div>

@@ -1,0 +1,9 @@
+img{
+/* object-fit:cover; */
+height: 500px;
+}
+
+form{
+    width: 50%;
+    margin-top: 30%;
+}

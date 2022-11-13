@@ -1,0 +1,73 @@
+.headers{
+    background: url('/assets/images/resta3.jpg');
+    height: 60vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.headers::before{
+content: '';
+height:100%;
+width: 100%;
+background-color: rgb(28, 2, 2);
+opacity: .4;
+position: absolute;
+top: 0;
+left: 0;
+}
+
+.resbx{
+    padding: 10px 5px;
+}
+.resbx img{
+    height:250px;
+    width: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.logo{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 15px 50%; 
+}
+
+.resh1{
+    position: absolute;
+    color: #fff;
+    margin: 150px 45%;
+    font-weight: 300;
+}
+
+.reshp{
+    position: absolute;
+    margin: 210px 10% 0 40%;
+    font-family: 'Open Sans',sans-serif;
+    font-style: italic;
+    color: #fff;
+    font-size: 1.5rem;
+}
+
+.p2{
+    font-family: 'Open Sans', sans-serif;
+     word-spacing: 3px;
+     line-height: 25px;
+}
+
+.h2{
+    font-size: 1.2rem;
+}
+
+button{
+    background-color: black;
+    color: #97BC62FF;
+    padding: 5px;
+    border: ipx solid transparent;
+    border-radius: 5px;
+}
+

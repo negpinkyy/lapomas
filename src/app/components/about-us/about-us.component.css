@@ -1,0 +1,54 @@
+.main{
+    height: 80vh;
+}
+.chnge{
+    background: url('/assets/images/resta11.jpg');
+    height: 80vh;
+    background-size: cover;
+    position: relative;
+}
+.chnge::before{
+    content: '';
+    height: 100%;
+    width: 100%;
+    top: 0;
+    right: 0;
+    background-color: black;
+    opacity: .8;
+    position: absolute;
+}
+
+img{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin-left: 50%;
+    margin-top: 15%;
+
+}
+p{
+    font-family: 'Open Sans', sans-serif;
+}
+.p1{
+    position: relative;
+    color: #fff;
+    font-size: 2rem;
+    word-spacing: 3px;
+    font-weight: 300;
+    top: 30px;
+}
+
+.p2{
+position: relative;
+color: #fff;
+font-size: 1.8rem;
+word-spacing: 3px;
+font-weight: 300;
+top: 30px;
+}
+
+.p3{
+word-spacing: 4px;
+line-height: 25px;
+}

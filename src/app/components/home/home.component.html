@@ -1,0 +1,93 @@
+
+<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+       <img src="/assets/images/cake6 .jpg" class="d-block w-100 " alt="..."> 
+      <a routerLink="menu" class="morebtn">ORDER NOW<i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+    </div>
+    <div class="carousel-item">
+      <img src="/assets/images/resta1.jpg" class="d-block w-100" alt="...">
+       <a routerLink="restaurant" class="morebtn">ORDER NOW<i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+    </div>
+    <div class="carousel-item">
+          <img src="/assets/images/drink1.jpg" class="d-block w-100" alt="...">
+       <a routerLink="menu" class="morebtn ">ORDER NOW<i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+
+
+<!-- step -->
+<div class="container mt-5  mb-4">
+     <h1 class="text-center">How to get <span style="color:  #2BAE66FF; font-weight: bold;"> fresh Food</span>
+     </h1>
+ <div class="row mt-5">
+    <div class="col-lg-4 mt-2">
+<div class="stepbox">
+          <h1>1</h1>
+           <p>Select Food</p>
+</div>
+ </div>
+ <div class="col-lg-4 mt-2">
+    <div class="stepbox">
+        <h1>2</h1>
+           <p>Fill the details</p>
+    </div>
+           
+         </div>
+<div class="col-lg-4 mt-2">
+          <div class="stepbox">
+             <h1>3</h1>
+           <p>your orderdelivery in minutes</p>
+          </div>
+         </div>
+    </div>
+</div>
+
+<!-- food services -->
+<div class="container mt-4 mb-4">
+  <h1 class="text-center">Customer <span style="color: #2BAE66FF; "> Favourite Food</span></h1>
+  <div class="row">
+    <div class="col-lg-3 mt-3" *ngFor="let fd of foodData; index as i">
+        <div class="foodbox" *ngIf="i<=3">
+        <img src="{{fd.foodImg}}" alt="" srcset="">
+        <h1>{{fd.foodName}}</h1>
+        <p>{{fd.foodPrice | currency: 'NGN '}}</p>        
+        </div>
+    </div>
+</div>
+<a routerLink="menu" class="viewmorebtn">View more <i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+</div>
+
+<!-- Restaurant services -->
+
+<div class="container mt-4 mb-4">
+  <h1 class="text-center">Customer <span style="color: #2BAE66FF; "> Five Star Hotel</span></h1>
+  <div class="row">
+    <div class="col-lg-3 mt-3" *ngFor="let rs of restaData;index as i">
+        <div class="foodbox" *ngIf="i<=3">
+        <img src="{{rs.restaImg}}" alt="">
+        <h1>{{rs.restaName}}</h1>
+        <p>{{rs.restaPrice | currency: 'NGN '}}</p>        
+        </div>
+    </div>
+</div>
+<a routerLink="restaurant" class="viewmorebtn">View more <i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+</div>
+
+
+

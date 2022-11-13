@@ -1,0 +1,36 @@
+.button1{
+padding: 5px 10px;
+background-color: black;
+color: rgb(54, 135, 54);
+border: none;
+border-radius: 5px;
+font-size: 1.3rem;
+font-weight: bolder;
+}
+
+.button2{
+    padding: 5px 10px;
+    background-color: black;
+    color: rgb(54, 135, 54);
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: bolder;
+}
+input
+{
+    padding: 5px;
+    width: 75%;
+    border: 2px solid rgb(80, 77, 77) ;
+    border-radius: 5px;
+}
+img{
+    height: 450px;
+    width: 100%;
+    border-radius: 5px;
+
+}
+
+h1{
+    font-size: 1.3rem;
+}

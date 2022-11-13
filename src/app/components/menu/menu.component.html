@@ -1,0 +1,190 @@
+
+<div class=" container-fluide   header1">
+  <marquee behavior="" direction=""><h1 class="mt-3">Welcome To <span style="color:#97BC62FF"> la poma </span> Menu <span style="margin-left: 50px">Eat Good at<span style="color:#97BC62FF"> la poma </span> Eat Fresh </span> <span style="margin-left: 50px">Enjoy Your Holiday at <span style="color:#97BC62FF"> la poma </span> Free Your Stress</span></h1></marquee>
+  <img src="/assets/images/logo.png" alt="" width="70" height="70"style=" position:relative;margin-left: 45%;">
+  
+  <p class="text-center">For All Your Reservation and Home Delivery We Are The Best</p>
+  
+</div>
+<section>
+<div id="carouselExampleControls" class="carousel slide container" data-bs-ride="carousel" >
+  <div class="carousel-inner ">
+    <div class="carousel-item active">
+     <div class="row ">
+   
+       <div class="col-lg-3 " *ngFor="let fd of foodData; index as i">
+     <div class="foodbox mt-3 mb-3" *ngIf="i<=3">
+    <img src="{{fd.foodImg}}"class="d-block w-100" alt="">
+      <h1>{{fd.foodName}}</h1>
+      <p>{{fd.foodDetails}}</p>
+      <p>{{fd.foodPrice | currency: 'NGN '}}</p>
+<a class="buybtn" [routerLink]="['/menu', fd.id]">Buy Now &nbsp; <i class="fa fa-shopping-basket" aria-hidden="true"></i></a>
+   </div>
+
+    </div>
+       
+      </div>
+     </div>
+    
+    <div class="carousel-item">
+    <div class="row">
+     <div class="col-lg-3 " *ngFor="let fd of foodData1; index as i">
+     <div class="foodbox mt-3 mb-3" *ngIf="i<=3">
+    <img src="{{fd.foodImg}}"class="d-block w-100" alt="">
+      <h1>{{fd.foodName}}</h1>
+      <p>{{fd.foodDetails}}</p>
+      <p>{{fd.foodPrice | currency: 'NGN '}}</p>
+<a class="buybtn" [routerLink]="['/menu', fd.id]">Buy Now &nbsp; <i class="fa fa-shopping-basket" aria-hidden="true"></i></a>
+   </div>
+
+    </div>
+    </div>
+    </div>
+     <div class="carousel-item">
+    <div class="row">
+    
+         <div class="col-lg-3 " *ngFor="let fd of foodData2 ; index as i">
+     <div class="foodbox mt-3 mb-3" *ngIf="i<=3">
+    <img src="{{fd.foodImg}}"class="d-block w-100" alt="">
+      <h1>{{fd.foodName}}</h1>
+      <p>{{fd.foodDetails}}</p>
+      <p>{{fd.foodPrice | currency: 'NGN '}}</p>
+<a class="buybtn" [routerLink]="['/menu', fd.id]">Buy Now &nbsp; <i class="fa fa-shopping-basket" aria-hidden="true"></i></a>
+   </div>
+
+    </div>
+    </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+
+<!-- Second carousel -->
+
+
+<div id="carouselExampleFade" class="carousel slide container carousel-fade" data-bs-ride="carousel" >
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+    <div class="row">
+       <div class="col-lg-3 " *ngFor="let fd of foodDataC ; index as i">
+     <div class="foodbox mt-3 mb-3" *ngIf="i<=3">
+    <img src="{{fd.foodImg}}" alt="">
+      <h1>{{fd.foodName}}</h1>
+      <p>{{fd.foodDetails}}</p>
+      <p>{{fd.foodPrice | currency: 'NGN '}}</p>
+<a class="buybtn" [routerLink]="['/menu', fd.id]">Buy Now &nbsp; <i class="fa fa-shopping-basket" aria-hidden="true"></i></a>
+   </div>
+
+    </div>
+    </div>
+    </div>
+    <div class="carousel-item">
+      <div class="row">
+        <div class="col-lg-3 " *ngFor="let fd of foodDataC1; index as i">
+     <div class="foodbox mt-3 mb-3" *ngIf="i<=3">
+    <img src="{{fd.foodImg}}" alt="">
+      <h1>{{fd.foodName}}</h1>
+      <p>{{fd.foodDetails}}</p>
+      <p>{{fd.foodPrice | currency: 'NGN '}}</p>
+<a class="buybtn" [routerLink]="['/menu', fd.id]">Buy Now &nbsp; <i class="fa fa-shopping-basket" aria-hidden="true"></i></a>
+   </div>
+
+    </div>
+      </div>
+    </div>
+    <div class="carousel-item">
+    <div class="row">
+       <div class="col-lg-3 " *ngFor="let fd of foodDataC2; index as i">
+     <div class="foodbox mt-3 mb-3" *ngIf="i<=3">
+    <img src="{{fd.foodImg}}" alt="">
+      <h1>{{fd.foodName}}</h1>
+      <p>{{fd.foodDetails}}</p>
+      <p>{{fd.foodPrice | currency: 'NGN '}}</p>
+<a class="buybtn" [routerLink]="['/menu', fd.id]">Buy Now &nbsp; <i class="fa fa-shopping-basket" aria-hidden="true"></i></a>
+   </div>
+
+    </div>
+    </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+<!-- fourth carousel -->
+<div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active" data-bs-interval="10000">
+     <div class="container mt-5 mb-5">
+  <div class="row">
+   <div class="col-lg-3 " *ngFor="let fd of foodDataC2A">
+     <div class="foodbox mt-3 mb-3">
+    <img src="{{fd.foodImg}}" alt="">
+      <h1>{{fd.foodName}}</h1>
+      <p>{{fd.foodDetails}}</p>
+      <p>{{fd.foodPrice | currency: 'NGN '}}</p>
+<a class="buybtn" [routerLink]="['/menu', fd.id]">Buy Now &nbsp; <i class="fa fa-shopping-basket" aria-hidden="true"></i></a>
+   </div>
+
+    </div>
+  </div>
+</div>
+    </div>
+    <div class="carousel-item" data-bs-interval="2000">
+     <div class="container mt-5 mb-5">
+  <div class="row">
+   <div class="col-lg-3 " *ngFor="let fd of foodDataC2B">
+     <div class="foodbox mt-3 mb-3">
+    <img src="{{fd.foodImg}}" alt="">
+      <h1>{{fd.foodName}}</h1>
+      <p>{{fd.foodDetails}}</p>
+      <p>{{fd.foodPrice | currency: 'NGN '}}</p>
+<a class="buybtn" [routerLink]="['/menu', fd.id]">Buy Now &nbsp; <i class="fa fa-shopping-basket" aria-hidden="true"></i></a>
+   </div>
+
+    </div>
+  </div>
+</div>
+    </div>
+    <div class="carousel-item">
+      <div class="container mt-5 mb-5">
+  <div class="row">
+   <div class="col-lg-3 " *ngFor="let fd of foodDataC2C">
+     <div class="foodbox mt-3 mb-3">
+    <img src="{{fd.foodImg}}" alt="">
+      <h1>{{fd.foodName}}</h1>
+      <p>{{fd.foodDetails}}</p>
+      <p>{{fd.foodPrice | currency: 'NGN '}}</p>
+<a class="buybtn" [routerLink]="['/menu', fd.id]">Buy Now &nbsp; <i class="fa fa-shopping-basket" aria-hidden="true"></i></a>
+   </div>
+
+    </div>
+  </div>
+</div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+</section>
+

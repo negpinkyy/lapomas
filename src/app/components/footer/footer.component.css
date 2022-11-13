@@ -1,0 +1,19 @@
+.footer{
+    background-color:#2A2B2DFF;
+    color:rgb(228, 220, 155);
+    /* overflow: hidden;
+   position: sticky; */
+   margin-bottom: 0;
+}
+
+a{
+    text-decoration: none;
+    font-size: 1.3rem;
+    padding: 0 10px;
+    color: #FCF6F5FF;
+    /* margin: 10px; */
+    line-height: 100px;
+}
+a:hover{
+    color:rgb(244, 236, 195)
+}
